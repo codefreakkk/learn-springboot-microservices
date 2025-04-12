@@ -1,0 +1,11 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - D:\Project\hotel-log\user-service.log
+      - D:\Project\hotel-log\hotel-service.log
+      - D:\Project\hotel-log\rating-service.log
+
+output.logstash:
+  hosts: ["logstash:5044"]
+
